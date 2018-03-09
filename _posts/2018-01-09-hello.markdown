@@ -4,3 +4,11 @@ description: "This text shows up in search engine previews"
 ---
 
 This is a post. Rename the file and replace it with a real post.
+
+<h3>Hed Level Three</h3>
+
+paragraph paragraph paragraph
+
+### Hed level three
+
+This is a paragraph explaining that using pound signs is an alternative to html header tags
