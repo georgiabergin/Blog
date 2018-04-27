@@ -13,9 +13,14 @@
 	<!-- Load styles -->
 	<!-- For production, combine all of the stylesheets -->
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/sitewide.css">
+	<!-- <link rel="stylesheet" href="../css/sitewide.css"> -->
 	
 	<!-- pull in webfonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css?family=Asar|Open+Sans" rel="stylesheet"> 
 
 </head>
 <body>
@@ -24,17 +29,31 @@
 	<!-- In general, you should have only one container per page. -->
 	<div class="container">
 
-        <p><a href="{{ site.url }}{{ site.baseurl }}">Home</a></p>
+        <div class="home"><p><a href="{{ site.url }}{{ site.baseurl }}">Home</a></p></div>
 
-        <h1>{{ page.title }}</h1>
+        <div class="title">
 
-        {% if page.date %}
+        <h1>Title{{ page.title }}</h1>
+
+       <h5> {% if page.date %}
     		<p>{{ page.date | date: "%A, %B %-d, %Y" }}</p>
-        {% endif %}
+        {% endif %}</h5>
 
-        {{ content }}
+       <h4> {{ content }}</h4>
+
+        </div>
+
+        <div class="text-content">
+	<p> Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.Here is a line of text.</p>
+	
+
+        </div>
+        
+        <div class="image-content">
+        </div>	
 
 	</div><!-- end container -->
 	
 </body>
 </html>
+
